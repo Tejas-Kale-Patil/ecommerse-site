@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.cartText{
+  font-size: 16px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainSec{
+  overflow-x: hidden;
+  overflow-y:scroll ;
+  height: calc(100vh - 90px) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.itemCard{
+  background-color: #ecf4f4 !important;
+  transition: transform 0.2s;
+}
+.searchInp{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid #c77e7e;
+  outline-color: #878787;
+}
+.itemCard:hover{
+  transform: scale(1.04);
+  background-color: #d2efef !important;
+}
+.titleSubText{
+  font-size: 12px;
+}
+.itemImg{
+  height: 250px; 
+  padding: 1em;
+}
+.titleText{
+  color: #878787;
+  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.descriptionText{
+  color: black;
+  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.itemImgDetail{
+ width: 50%;
+  height: 100%;
+  object-fit: inherit;
+}
+.cartImg{
+  width: 50%;
+  max-height: 240px;
+}
+.cartBox{
+  height: 250px;
+}
+@media only screen and (min-width:380px) and (max-width: 720px) {
+  .cartBox{
+    height: auto;
   }
-}
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ @media only screen and (min-width:380px) and (max-width: 720px) {
+  .cartBox{
+    height: 400px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
